@@ -5,4 +5,3 @@
 this is `inline code`
 
 This [link2](some-thing.html) goes to a random website.
-
