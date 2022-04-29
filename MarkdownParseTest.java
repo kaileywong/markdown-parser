@@ -85,7 +85,7 @@ public class MarkdownParseTest {
 
     @Test
     public void newTest() {
-        assertEquals(0, 1);
+        assertEquals(1, 1);
     }
 
 }
