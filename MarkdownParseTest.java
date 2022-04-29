@@ -83,4 +83,9 @@ public class MarkdownParseTest {
         assertEquals(List.of("a link on the first line"), MarkdownParse.getLinks(content));
     }
 
+    @Test
+    public void newTest() {
+        assertEquals(0, 1);
+    }
+
 }
