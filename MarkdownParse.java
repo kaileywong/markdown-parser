@@ -23,6 +23,10 @@ public class MarkdownParse {
                 currentIndex = closeParen;
                 continue;
             }
+            if(markdown.substring(openParen + 1, closeParen).contains(System.getProperty("line.separator"))){
+                currentIndex = closeParen;
+                continue;
+            }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
         }
