@@ -88,4 +88,11 @@ public class MarkdownParseTest {
         assertEquals(1, 1);
     }
 
+    @Test
+    public void testfile9CorrectLinks() throws IOException {
+        Path fileName = Path.of("test-file9.md");
+        String content = Files.readString(fileName);
+        assertEquals(List.of(), MarkdownParse.getLinks(content));
+    }
+
 }
