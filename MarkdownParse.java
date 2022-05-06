@@ -24,7 +24,8 @@ public class MarkdownParse {
                 continue;
             }
             if(markdown.substring(openParen + 1, closeParen).contains(System.getProperty("line.separator"))){
-                currentIndex = closeParen;
+                
+        currentIndex = closeParen;
                 continue;
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
@@ -40,7 +41,5 @@ public class MarkdownParse {
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
 	    System.out.println(links);
-        System.out.println("hi");
-
     }
 }
